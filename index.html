@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Roadhouse BBQ – Coming Soon</title>
+  <style>
+    @keyframes flicker {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 200px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ffbb33;
+      margin: 0;
+      animation: flicker 1s infinite;
+      text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.jpg" alt="The Roadhouse BBQ Logo">
+  <h1>Coming Soon</h1>
+  <h2>The Roadhouse BBQ</h2>
+</body>
+</html>
