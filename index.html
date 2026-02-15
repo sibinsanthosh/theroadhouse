@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roadhouse Barbeque</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bangers&family=Permanent+Marker&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2590d",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#121212",
+                        "charcoal": "#1a110c",
+                        "charcoal-medium": "#221610",
+                        "industrial-gray": "#342218",
+                        "ember": "#ff4d00",
+                        "accent": "#FFB703",
+                        "fire-red": "#E63946",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "bangers": ["Bangers", "cursive"],
+                        "marker": ["Permanent Marker", "cursive"],
+                        "body": ["Quicksand", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: "Space Grotesk", sans-serif; }
+        .grainy-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuC5c7ciunMI6xYC7yVqjvlkSoSGcE8B_xiyryIQ-PhhscnJRR67kyCpR45RPLp9mkLk2oXA9q8g1ER5KjHJOEmqOI_Is9MxFZAlBJkcc7BvqR_c8AixEFb1qcSTca6_89vwn0ASZPHX9tSa9DEp5sWAItn1dq_4KKhHBKZu8YsSLpB-ibZteKnRiAcwdG8LDEii2sCuJQxugpIWD0pA8COzUwrDwS2s-Zxr54KPK8TMVQCIkgBYOQbq0EHBfcm5vn4vNQhqW8ZVa9vI);
+            opacity: 0.03;
+            pointer-events: none;
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+        }
+        .pulse-live {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .3; }
+        }
+        .glass-panel {
+            background: rgba(73, 47, 34, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(242, 89, 13, 0.2);
+        }
+        .fiery-border {
+            border: 2px solid #f2590d;
+            box-shadow: 0 0 15px rgba(242, 89, 13, 0.3);
+        }
+        .skull-bg {
+            background-image: linear-gradient(rgba(18, 18, 18, 0.92), rgba(18, 18, 18, 0.92)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuDO0FSgjWCmojIztzKQvEgDokBMtE1pkIBJ0f1iTE_UxebifwCgWKXYXI0gbpR1bkmkO5aIrC_HD8TZbxXjxalxNWpjOrOwWLCYVA1EfMf-I7jFNGBQH_G-GGQzVDGkkdoDPnSsq8L06Sm1mXxJp8-m9o0qaO0hHtiJNLnqyia7qWmEaUXei43DgjgUM0Dsn0Xe9XK7o7YuJh3HdHoG50OvZlZk-w5pVckoZ1sXxY5ZRKlvcBQnW7Q3Lwj4GBcSmKYW-dOIMjgRkb8S);
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-hGBiB4g0.js"></script>
+</head>
+<body class="bg-background-dark text-white">
+    <div id="root"></div>
+    <div class="grainy-overlay"></div>
+</body>
+</html>
